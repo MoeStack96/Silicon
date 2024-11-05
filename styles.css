@@ -428,3 +428,154 @@ header .container {
 
     }
 }
+
+#features .image{
+    display: none;
+}
+
+#features h1 {
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+
+}
+
+ #features .paragraph {
+    font-size: 18px;
+    font-weight: 400;
+    color: #585C7B;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#features p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #585C7B;
+    margin-bottom: 2rem;
+}
+
+
+@media (min-width: 768px) {
+
+    .features-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+}
+
+
+@media (min-width: 1400px) {
+
+    #features .image{
+        display: block;
+    }
+
+    #features .container {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        gap: 1rem;
+    }
+    
+    .features-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    
+}
+
+
+#slider {
+    background-color: #f3f6ff;
+    padding: 2rem;
+}
+
+#slider h1 {
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: 900;
+    font-size: 28px;
+}
+
+#slider h4 {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 800;
+}
+
+#slider p {
+    text-align: center;
+}       
+
+#slider .carousel {
+    display: flex;
+    justify-content: space-around;
+}
+
+#left-img, #right-img {
+    display: none;
+}
+
+.desktop-h4, .desktop-p {
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+    #slider {
+
+        .carousel {
+            justify-content: center;
+        }
+    
+        #left-img, #right-img {
+            display: block;
+        }
+
+        h1 {
+            font-size: 33.5px;
+            font-weight: 900;
+        }
+
+        .tablet-h4::before {
+            content: "Step 3. ";
+        } 
+    }   
+}
+
+
+
+@media (min-width: 1400px) {
+
+    #slider {
+
+        .carousel {
+            justify-content: space-evenly;
+        }
+    
+        #left-img, #right-img {
+            display: block;
+        }
+
+        h1 {
+            font-size: 33.5px;
+            font-weight: 900;
+        }
+
+        .tablet-h4, .tablet-p {
+            display: none;
+        }
+
+        .desktop-h4, .desktop-p {
+            display: block;
+        }
+
+
+        
+        
+
+    }   
+}
