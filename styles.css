@@ -38,8 +38,6 @@ body {
     margin: 0 auto;
 }
 
-/* Navbar */
-
 .nav-link {
     color: var(--color-dark);
     text-decoration: none;
@@ -55,7 +53,6 @@ body {
   display: none;
 }
 
-/*  */
 
 a {
     color: var(--color-primary);
@@ -205,7 +202,6 @@ header .container {
 }
 
 
-
 #brands {
     display: none;
 }
@@ -215,13 +211,11 @@ header .container {
     border-radius: 6px;
     height: 100px;
     width: 200px;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
-    
+    align-items: center; 
 }
 
 @media (min-width: 768px) {
@@ -429,6 +423,10 @@ header .container {
     }
 }
 
+#features {
+    margin-bottom: 4rem;
+}
+
 #features .image{
     display: none;
 }
@@ -490,6 +488,7 @@ header .container {
 #slider {
     background-color: #f3f6ff;
     padding: 2rem;
+    padding-bottom: 6rem;   
 }
 
 #slider h1 {
@@ -509,6 +508,8 @@ header .container {
 #slider p {
     text-align: center;
     color: #585C7B;
+    max-width: 650px;
+    margin: 0 auto;
 }       
 
 #slider .carousel {
@@ -562,7 +563,7 @@ header .container {
         }
 
         h1 {
-            font-size: 33.5px;
+            font-size: 40px;
             font-weight: 900;
         }
 
@@ -593,6 +594,14 @@ header .container {
         padding: 4rem 18rem;        
         height: 1100px; 
 
+        .first-text p {
+            padding: 12px 0;
+        }
+
+        .first-text p i {
+            padding-right: 8px;
+            color: var(--color-primary);
+        }
 
         #background {
             position: absolute;
@@ -628,6 +637,18 @@ header .container {
             position: absolute;
             bottom: 190px;
             right: 140px;
+        }
+
+        .texts {
+            display: flex;
+            max-width: 600px;
+            color: #565973;
+            padding: 0rem 0;
+        }
+
+        .text {
+            padding: 1rem 0;
+            
         }
 
 
@@ -787,8 +808,6 @@ header .container {
     }
     
 }
-
-
 
 
 @media (min-width: 768px) {
@@ -966,10 +985,6 @@ header .container {
     }
 
 }
-
-
-
-
 
 
 @media (min-width: 1400px) {
